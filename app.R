@@ -233,13 +233,6 @@ server <- function(input, output) {
                  savings = input$savings,
                  pension_rate=input$pension_rate, 
                  
-                 
-                 
-                 
-                 
-                 
-                 
-                 
                  per_year = per_year())
     
   })
