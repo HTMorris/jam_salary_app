@@ -5,7 +5,7 @@ library(shinyWidgets)
 library(bslib)
 library(thematic)
 library(gt)
-library(DT)
+
 # Build Net Pay Funciton
 
 net_pay_func <- function(basic_salary=0,
@@ -181,7 +181,7 @@ ui <- navbarPage(
     # Output table and graph
     mainPanel(
       tabsetPanel(
-        tabPanel("Montly Table", tableOutput("monthly_sal_table")),
+        tabPanel("Monthly Table", tableOutput("monthly_sal_table")),
         tabPanel("Forenightly Table", tableOutput("forenightly_sal_table")),
         tabPanel("Weekly Table", tableOutput("weekly_sal_table")),
         tabPanel("Annual Table", tableOutput("annual_sal_table"))
